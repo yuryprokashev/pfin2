@@ -1,0 +1,9 @@
+<button type = "button" 
+        class = "btn btn-sm" 
+        ng-class = "{ 'btn-primary': option.isSelected, 'btn-default': !option.isSelected}">
+    <span ng-show = "!option.isGlyph">{{option.name}}</span>
+    <i ng-show = "option.isGlyph"
+          ng-class = "option.className"
+          aria-hidden = "true"></i>
+</button>
+

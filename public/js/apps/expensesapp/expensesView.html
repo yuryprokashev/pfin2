@@ -1,0 +1,7 @@
+<ul class = "list-group">
+    <p ng-show = "!expenses.length">Nothing here yet. Post your expenses in the form above.</p>
+    <one-expense-view ng-repeat = "expense in expenses track by expense.guid"
+                      expense-object = "expense"
+                      ng-show = "expenses.length">
+    </one-expense-view>
+</ul>

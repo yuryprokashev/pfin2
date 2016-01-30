@@ -1,0 +1,18 @@
+<li class="list-group-item">
+    <div class = "row">
+        <div class = "col-md-4">
+            <expense-amount-with-currency expense-amount = "expenseObject.amount"
+                                          currency-id = "expenseObject.spentCurrencyId">
+            </expense-amount-with-currency>
+        </div>
+        <div class = "col-md-6">{{ setCategoryName( expenseObject.categoryId ) }}</div>
+        <div class = "col-md-2 text-right">
+            <delete-btn object-guid-to-delete = "expenseObject.guid"
+                        channel-group = "channelGroup" ></delete-btn>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-md-4 small">{{ formatDate( expenseObject.date ) }}</div>
+        <div class = "col-md-8 small">{{ expenseObject.description }}</div>
+    </div>
+</li>

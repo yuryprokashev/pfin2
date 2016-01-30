@@ -1,0 +1,16 @@
+{
+  "name": "pfin",
+  "version": "1.0.0",
+  "description": "personal finance app with both server and client written in javascript",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yury Prokashev",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
+  }
+}

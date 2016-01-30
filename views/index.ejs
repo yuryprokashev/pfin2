@@ -1,0 +1,58 @@
+<html ng-app = "PersonalFinance">
+    <head>
+        <title>Personal Finance</title>
+        <!-- import Angular and it's services -->
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.js"></script>
+        <script src = "https://code.angularjs.org/1.5.0-rc.2/angular-route.js"></script>
+        <script src = "https://code.angularjs.org/1.5.0-rc.2/angular-mocks.js"></script>
+        
+        
+        <!-- Bootstrap CSS/JS and jQuery JS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- Font Awesome icons -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+        <!-- Moment js -->
+        <script src = "http://momentjs.com/downloads/moment.min.js"></script>
+        <!-- Numeral js -->
+        <script src = "//cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
+        <!-- Plot.ly -->
+        <script src = "https://cdn.plot.ly/plotly-latest.min.js"></script>
+        
+        <!-- the App javascript -->
+        <script src = "/assets/js/client.js"></script>
+        <script src = "/assets/js/services/channels.js"></script>
+        <script src = "/assets/js/apps/expensesapp/expensesapp.js"></script>
+        <script src = "/assets/js/apps/chartsapp/chartsapp.js"></script>
+        <script src = "/assets/js/services/expenses.js"></script>
+        <script src = "/assets/js/services/charts.js"></script>
+        <script src = "/assets/js/common/common.js"></script>          
+        
+    </head>
+    
+    <body>
+        <header>
+            <nav class = "navbar navbar-default">
+                <div class = "container-fluid">
+                    <div class = "navbar-header">
+                        <ul class="nav navbar-nav">
+                            <li><a href = "#/" class = "navbar-brand">Personal Finance</a></li>
+                            <li><a href = "#/expenses">Expenses App</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-header navbar-right">
+                        <ul class = "nav navbar-nav">
+                            <li class="navbar-right"><a href = "#/tests">Tests</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>  <!--end of navigation -->
+        </header>
+        
+        <div class="container" ng-view></div> <!-- end of content area -->
+        
+        <footer></footer> <!-- end of footer -->
+    </body>
+</html>
